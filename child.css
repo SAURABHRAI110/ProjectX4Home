@@ -1,0 +1,99 @@
+html,
+body {
+  margin: 0px;
+}
+
+.section2 {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 100px auto;
+  grid-template-rows: auto;
+  background-color: white;
+  grid-gap: 1px;
+}
+
+.section2 > .menublock {
+  background-color: #fc3a52;
+}
+.menublock {
+  top: 40%;
+}
+
+/*Hamburger menu button 
+-----------------------------------------------------*/
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.menu-4 {
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin: 50px;
+  cursor: pointer;
+  transition: all 0.3s;
+  top: 40%;
+  right: 13%;
+}
+
+.menu-4:before,
+.menu-4:after {
+  content: "";
+  position: absolute;
+  transition: all 0.5s;
+}
+
+.menu-4 {
+  width: 30px;
+  height: 30px;
+  border-bottom: 4px solid white;
+}
+.menu-4:hover {
+  border-bottom-color: yellow;
+}
+.menu-4:hover:before,
+.menu-4:hover:after {
+  background-color: yellow;
+}
+.menu-4:before,
+.menu-4:after {
+  background-color: white;
+  height: 4px;
+  width: 30px;
+  top: 50%;
+  left: 50%;
+  margin-left: -15px;
+}
+.menu-4:before {
+  margin-top: -10px;
+}
+.menu-4:after {
+  margin-top: 3px;
+}
+
+.menu-4-active {
+  top: 0;
+  margin-left: 38px;
+  height: 50px;
+  width: 50px;
+  border: 0;
+  background-color: #372154;
+  top: 40%;
+  right: 13%;
+}
+.menu-4-active:before,
+.menu-4-active:after {
+  background-color: #e3e3e3 !important;
+  margin-left: -15px !important;
+  margin-top: -2px !important;
+}
+.menu-4-active:before {
+  transform: rotate(45deg) !important;
+}
+.menu-4-active:after {
+  transform: rotate(-45deg) !important;
+}
